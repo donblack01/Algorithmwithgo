@@ -116,7 +116,7 @@ func way(maze [][]int, start, end point) [][]int {
 }
 
 func main() {
-	maze := readMaze("D:/go/golearn/src/learn/Algorithm/maze.txt")
+	maze := readMaze("Algorithm/maze.txt")
 	steps := walk(maze, point{0, 0}, point{len(maze) - 1, len(maze[0]) - 1})
 
 	s := way(steps, point{0, 0}, point{len(maze) - 1, len(maze[0]) - 1})
